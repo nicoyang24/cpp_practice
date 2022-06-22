@@ -2,9 +2,11 @@
 #include <iostream>
 const int Cities = 5;
 const int Years = 4;
+
 int main()
 {
     using namespace std;
+
     const char * cities[Cities] =   // array of pointers
     {                               // to 5 strings
         "Gribble City",
@@ -13,7 +15,6 @@ int main()
         "San Gribble",
         "Gribble Vista"
     };
-
     int maxtemps[Years][Cities] =   // 2-D array
     {
         {96, 100, 87, 101, 105},   // values for maxtemps[0]
@@ -22,6 +23,11 @@ int main()
         {98, 103, 95, 109, 108}   // values for maxtemps[3]
     };
 
+    //------------------------------------------------------------------------//
+    cout << "Hello World\n";
+    cout << "From: nicoyang\n";
+
+    //------------------------------------------------------------------------//
     cout << "Maximum temperatures for 2008 - 2011\n\n";
     for (int city = 0; city < Cities; ++city)
     {
